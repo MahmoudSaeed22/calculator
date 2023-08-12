@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator </title>
+    <!-- css -->
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/main.css">
+
+</head>
+5
+<body>
+    <div class="container">
+        <div class="results">
+            <form action="">
+                <div class="inputs">
+                    <input class="inputs" type="text" autofocus>
+                </div>
+                <div class="result">
+                    <input class="result" type="text" disabled>
+                </div>
+                <button id="send" onclick="calc('=')"> </button>
+            </form>
+        </div>
+        <div class=" buttons ">
+            <div class="flex-1 left-buttons  ">
+                <button class="bt  yollow ct" value="%" onclick="Delete('d')"> DE </button>
+                <button class="bt yollow ct" value="÷" onclick="display('/')"> ÷ </button>
+                <button class="bt bt-H yollow ct"value="c" onclick="Clear('c')" > C </button>
+                
+            </div>
+            <div class="flex-1  numbers ">
+                <button class="bt num" value="9" onclick="display('9')"> 9 </button>
+                <button class="bt num" value="8" onclick="display('8')"> 8 </button>
+                <button class="bt num"value="7" onclick="display('7')"> 7 </button>
+                <button class="bt num "value="6" onclick="display('6')"> 6 </button>
+                <button class="bt num"value="5" onclick="display('5')"> 5 </button>
+                <button class="bt num"value="4" onclick="display('4')"> 4 </button>
+                <button class="bt num"value="3" onclick="display('3')"> 3 </button>
+                <button class="bt num"value="2" onclick="display('2')"> 2 </button>
+                <button class="bt num"value="1" onclick="display('1')"> 1 </button>
+                <button class="bt num bt-W"value="0" onclick="display('0')"> 0 </button>
+                <button class="bt num "value="." onclick="display('.')"> . </button>
+ 
+            </div>
+            <div class="flex-1  right-buttons  ">
+                <button class="bt yollow ct" value="×" onclick="display('*')"> × </button>
+                <button class="bt  yollow ct" value="-"  onclick="display('-')"> - </button>
+                <button class="bt  yollow ct" value="+"  onclick="display('+')"> + </button>
+                <button class="bt  yollow ct" value="="  onclick="calc('=')"> = </button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="assets/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/main.js"></script>
+</body>
+</html>
