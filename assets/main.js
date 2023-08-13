@@ -35,3 +35,12 @@ function calc(){
 }
 
 
+
+//
+let results = document.querySelector(".results")
+function mov(){
+    results.setAttribute("style","transform: scaleX(110%);");
+    setTimeout(() => {
+        results.removeAttribute("style");
+    }, 200);
+}
